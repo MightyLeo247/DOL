@@ -333,3 +333,85 @@ button:hover{
     height: 130vh;
     background-color: grey;
 }*/
+
+
+
+    /* For mobile devices */
+@media only screen and (max-width: 768px) {
+    .content-head {
+      height: 50vh;
+    }
+    .navbar {
+      width: 90%;
+      padding: 20px 0;
+    }
+    .navbar img {
+      width: 60px;
+    }
+    .content {
+      width: 80%;
+      top: 30%;
+    }
+    .title {
+      font-size: 40px;
+      height: 60px;
+    }
+    .slider {
+      margin-left: 10px;
+    }
+    .content p {
+      margin: 3px auto;
+      font-size: 16px;
+    }
+    button {
+      width: 150px;
+      padding: 10px 0;
+      margin: 15px 5px;
+    }
+    .content-ii {
+      height: 80vh;
+    }
+    .title-ii {
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .title-ii h1 {
+      font-size: 30px;
+    }
+    .title-ii p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .title-iii {
+      margin-left: 50px;
+      margin-top: 40px;
+    }
+    .title-iii h2 {
+      font-size: 30px;
+    }
+    .title-iii h6 {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .content-v, .content-vi, .content-vii, .content-viii, .content-viv, .content-vv, .content-vvi, .content-vvii, .content-vviii {
+      height: 80vh;
+    }
+    .img-v img {
+      width: 100%;
+    }
+    .text-box {
+      width: 400px;
+      top: 150px;
+      left: 50px;
+    }
+    .text-box h1 {
+      margin-bottom: 5px;
+    }
+    .text-box p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  
+
+   
