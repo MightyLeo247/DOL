@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.content-head{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(luxury-living-room-design-picture-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 80px;
+    cursor: pointer;
+    mix-blend-mode: color-dodge;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #DAA520;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 65%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    height: 80px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #656565;
+}
+.slider{
+    color: #DAA520;
+    margin-left: 17px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+}
+@keyframes slider{
+    0%{ margin-top: -160px; }
+    30%{ margin-top: -160px; }
+    35%{ margin-top: 0px; }
+    65%{ margin-top: 0px; }
+    70%{ margin-top: 160px; }
+    100%{ margin-top: 160px; }
+}
+
+.content p{
+    margin: 5px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+    color: grey;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #DAA520;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #DAA520;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.content-ii{
+    width: 100%;
+    height: 94vh;
+    border-top: 10px solid gray;
+    background-color: #656565;
+}
+.title-ii{
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.title-ii h1{
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #DAA520;
+}
+.title-ii p{
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.title-iii{
+    margin-left: 150px;
+    margin-top: 80px;
+}
+.title-iii h2{
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #DAA520;
+}
+.title-iii h6{
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.content-v,.content-vi,.content-vii,.content-viii,.content-viv,.content-vv,.content-vvi,.content-vvii,.content-vviii{
+    width: 100%;
+    height: 90vh;
+    border-top: 10px solid gray;  
+    position: absolute;
+    overflow: hidden;
+}
+.img-v img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 5s linear infinite;
+}
+@keyframes zoom-out{
+    100%{ width: 100%; }
+}
+.text-box{
+    width: 600px;
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+    left: 100px;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes textup{
+    10%{ transform: translateY(0px); }
+    100%{ transform: translateY(0px); }
+}
+.text-box h1{
+    margin-bottom: 10px;
+    color: #DAA520;
+    font-weight: 100;
+}
+.text-box p{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    line-height: 18px;
+}
+.content-v{
+    animation: slide1 12s linear infinite;
+}
+.content-vi{
+    animation: slide2 12s linear infinite;
+}
+.content-vii{
+    animation: slide3 12s linear infinite;
+}
+.content-viii{
+    animation: slide4 12s linear infinite;
+}
+.content-viv{
+    animation: slide5 12s linear infinite;
+}
+.content-vv{
+    animation: slide6 12s linear infinite;
+}
+.content-vvi{
+    animation: slide7 12s linear infinite;
+}
+.content-vvii{
+    animation: slide8 12s linear infinite;
+}
+.content-vviii{
+    animation: slide9 12s linear infinite;
+}
+@keyframes slide1{
+    0%{ visibility: visible; }
+    25%{ visibility: hidden; }
+    50%{ visibility: hidden; }
+    75%{ visibility: hidden; }
+    100%{ visibility: visible;}
+}
+@keyframes slide2{
+    0%{ visibility: hidden; }
+    25%{ visibility: hidden; }
+    50%{ visibility: visible; }
+    75%{ visibility: hidden; }
+    100%{ visibility: hidden;}
+}
+@keyframes slide3{
+    0%{ visibility: hidden; }
+    25%{ visibility: hidden; }
+    50%{ visibility: hidden; }
+    75%{ visibility: visible; }
+    100%{ visibility: hidden;}
+}
+@keyframes slide4{
+    0%{ visibility: hidden; }
+    25%{ visibility: hidden; }
+    50%{ visibility: hidden; }
+    75%{ visibility: hidden; }
+    100%{ visibility: visible;}
+}
+@keyframes slide5{
+    0%{ visibility: visible; }
+    25%{ visibility: hidden; }
+    50%{ visibility: hidden; }
+    75%{ visibility: hidden; }
+    100%{ visibility: hidden;}
+}
+@keyframes slide6{
+    0%{ visibility: hidden; }
+    25%{ visibility: visible; }
+    50%{ visibility: hidden; }
+    75%{ visibility: hidden; }
+    100%{ visibility: hidden;}
+}
+@keyframes slide7{
+    0%{ visibility: hidden; }
+    25%{ visibility: hidden; }
+    50%{ visibility: visible; }
+    75%{ visibility: hidden; }
+    100%{ visibility: hidden;}
+}
+@keyframes slide8{
+    0%{ visibility: hidden; }
+    25%{ visibility: hidden; }
+    50%{ visibility: hidden; }
+    75%{ visibility: visible; }
+    100%{ visibility: hidden;}
+}
+@keyframes slide9{
+    0%{ visibility: hidden; }
+    25%{ visibility: hidden; }
+    50%{ visibility: hidden; }
+    75%{ visibility: hidden; }
+    100%{ visibility: visible;}
+}
+.text-box text-box1{
+    animation-delay: 0s;
+}
+.text-box text-box2{
+    animation-delay: 3s;
+}
+.text-box text-box3{
+    animation-delay: 6s;
+}
+.text-box4{
+    animation-delay: 9s;
+}
+.text-box5{
+    animation-delay: 12s;
+}
+.text-box6{
+    animation-delay: 15s;
+}
+.text-box7{
+    animation-delay: 18s;
+}
+.text-box8{
+    animation-delay: 21s;
+}
+.text-box9{
+    animation-delay: 24s;
+}
+/* .page-4{ 
+    width: 100%;
+    height: 130vh;
+    background-color: grey;
+}*/
